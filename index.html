@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Nest Design Home</title>
+
+    <!--Fontawsome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Bootstrap cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Css File-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="position-relative">
+        <nav class="d-flex justify-content-between align-items-center container-lg text-light border-bottom border-2">
+            <img src="images/Logo.png"  alt="logo" class="logo"/>
+            <i class="fa-solid fa-ellipsis-vertical me-4 open_media_menu d-block d-md-none"></i>
+            <ul class="flexEnd p-0 m-0 d-md-flex flex-md-row menu_list" style="gap:30px ; margin-top: 18px !important;display:none">
+                <div class="flexEnd menu_one d-block d-md-flex">
+                    <li class="position-relative">
+                        <a href='#'>Home</a>
+                        <hr class="position-absolute"/>
+                    </li>
+                    <li class="position-relative">
+                        <a href='#productList'>Product</a>
+                        <hr class="position-absolute"/>
+                    </li>
+                    <li class="position-relative">
+                        <a href='#about'>About Us</a>
+                        <hr class="position-absolute"/>
+                    </li>
+                    <li class="position-relative">
+                        <a href='#contact'>Contact Us</a>
+                        <hr class="position-absolute"/>
+                    </li>
+                </div>
+                <div class="icon-container d-flex justify-content-end align-items-center" style="gap:20px">
+                    <div class="icon favorite">
+                        <i class="fas fa-heart open_favorite"></i> 
+                        <span class="count">0</span>
+                    </div>
+                    <div class="icon cart">
+                        <i class="fas fa-shopping-cart open_cart"></i> 
+                        <span class="count">0</span>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <section class="intro d-flex flex-column align-items-center justify-content-center pb-5">
+        <div class="d-flex justify-content-between align-items-start container-xl container-fluid">
+            <div class="mt-5">
+                <h2 class="fw-bolder">" The comfort and elegance of your home starts here "</h2>
+                <p>We offer you the best furniture designs for a comfortable and attractive living experience.</p>
+            </div>
+            <div class="position-relative d-flex flex-column justify-content-start align-items-start video_block">
+                <video autoplay loop muted>
+                    <source src="video/HomeSection2.mp4"  type="video/mp4" class="w-100 h-100"/>
+                </video>
+                <div class="d-flex flex-column justify-content-start align-items-start" style="gap: 18px;">
+                    <span class="d-flex align-items-center justify-content-start">
+                        <i class="fa-solid fa-location-dot me-2"></i>
+                        <a href='#' class="p-0 m-0">Jordan-Amman,7-Circle</a>
+                    </span>
+                    <span class="d-flex align-items-center justify-content-start">
+                        <i class="fa-solid fa-phone me-2"></i>
+                        <p class="p-0 m-0">+962785541237</p>
+                    </span>
+                    <span class="d-flex align-items-center justify-content-start">
+                        <i class="fa-solid fa-envelope me-2"></i>
+                        <a class="p-0 m-0" href="mailto:email@example.com">CozyNestDecore@gmail.com</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid container-lg d-flex justify-content-center align-items-center views mt-5 flex-wrap w-100" style="gap: 20px;">
+            <div class="view_1 d-flex flex-column justify-content-start align-items-center card" data-aos="fade-up"
+                                                                                                data-aos-anchor-placement="center-bottom"
+                                                                                                data-aos-delay="0">
+                <i class="fa-solid fa-headset"></i>
+                <h5><b>online support 24/7</b></h5>
+                <p class="text-center">Our customer support team is available 24/7 to answer any questions and provide help with your furniture selection. Chat with us anytime for quick, reliable service!</p>
+            </div>
+            <div class="view_2 d-flex flex-column justify-content-start align-items-center card" data-aos="fade-up"
+                                                                                                data-aos-anchor-placement="center-bottom"
+                                                                                                data-aos-delay="200">
+                <i class="fa-solid fa-truck"></i>
+                <h5><b>Free shipping on order over 355 JOD</b></h5>
+                <p class="text-center">Furnish your space with ease and have your favorite pieces delivered to your doorstep without any extra cost. Shop now and elevate your home effortlessly!</p>
+            </div>
+            <div class="view_3 d-flex flex-column justify-content-start align-items-center card" data-aos="fade-up"
+                                                                                                 data-aos-anchor-placement="center-bottom"
+                                                                                                 data-aos-delay="400">
+                <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                <h5><b>100% money back guarantee</b></h5>
+                <p class="text-center">We are confident you'll love your new furniture. If for any reason you're not completely satisfied, we offer a 100% money-back guarantee within 4 days of your purchase. Shop with peace of mind knowing you’re covered!</p>
+            </div>
+        </div>
+    </section>
+    <section class="slider">
+        <hr class="sliderView"/>
+        <div class="swiper-wrapper">
+            <div class="slide slide_1 d-flex flex-column justify-content-center align-items-cenetr ps-5 swiper-slide">
+                <div class="d-flex flex-column justify-content-center align-items-start ms-5 mt-5">
+                    <h2 class="text-uppercase fw-bolder text-dark">New Style Lamps</h2>
+                    <p>Discover our New Style Lamps, a perfect blend of modern aesthetics and cozy warmth, crafted to elevate the ambiance of your living space. Illuminate your home with a design that embodies both comfort and elegance, exclusively at Cosy Nest Design.</p>
+                    <button>Shopping Now</button>
+                </div>
+            </div>
+            <div class="slide slide_2 d-flex flex-column justify-content-center align-items-cenetr ps-5 swiper-slide">
+                <div class="d-flex flex-column justify-content-center align-items-start ms-5 mt-5">
+                    <h2 class="text-uppercase fw-bolder text-dark">Cosy Nest Beds</h2>
+                    <p>Discover the epitome of comfort with new style of Beds by Cosy Nest. Offering innovative designs that blend elegance and functionality, our beds promise to transform your bedroom into a serene retreat. Experience restful sleep in style.</p>
+                    <button>Shopping Now</button>
+                </div>
+            </div>
+            <div class="slide slide_3 d-flex flex-column justify-content-center align-items-cenetr ps-5 swiper-slide">
+                <div class="d-flex flex-column justify-content-center align-items-start ms-5 mt-5">
+                    <h2 class="text-uppercase fw-bolder text-dark">Chairs Collection</h2>
+                    <p>Discover the ultimate blend of comfort and style with our exclusive Chairs Collection at Cosy Nest Design. Crafted with attention to detail, each piece is designed to elevate your space while providing the perfect balance of luxury and relaxation.</p>
+                    <button>Shopping Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+            <div class="container-fluid container-md d-flex flex-column-reverse flex-lg-row  justify-content-center align-items-center align-items-md-end align-items-lg-start  pt-5 pb-5" style="gap: 50px;">
+                <div class="position-relative" data-aos="fade-right">
+                    <h3 class="fw-bolder">Welcome To Cosy Nest Decore</h3>
+                    <img src="images/aboutImg.png" alt="furniture"  class="rounded"/>
+                </div>     
+                <div data-aos="fade-left">
+                    <div class="d-flex justify-content-center align-items-center w-100">
+                        <h2 class="title_about fs-1" style="font-family: 'Monoton', sans-serif;">About Us</h2>
+                    </div>
+                    <div class="mt-5 mb-5 about_paragraph">
+                        <p>At Cosy Nest Design, we believe that your home should be a reflection of your personality—a warm, inviting space that feels like a sanctuary. With a passion for timeless design and modern comfort, we strive to create interiors that are both aesthetically pleasing and functional.</p>
+                        <p>We aim to transform houses into homes by blending creativity, attention to detail, and our love for design. Whether you're looking to redesign a single room or your entire home, our team of expert designers works closely with you to bring your vision to life, while ensuring every space we touch is cozy, stylish, and uniquely yours.</p>
+                        <p>We understand that every home is different, which is why we tailor our services to meet the specific needs and tastes of each client. From initial consultation through to final touches, we offer a seamless design experience, ensuring that every detail is thoughtfully curated to create a space you will love.</p>
+                    </div>
+                    <div class="shopping_button mt-2">
+                        <a class="button type--A">
+                            <div class="button__line"></div>
+                            <div class="button__line"></div>
+                            <span class="button__text">Start Shopping</span>
+                            <div class="button__drow1"></div>
+                            <div class="button__drow2"></div>
+                        </a>
+                     </div>
+                </div> 
+            </div> 
+            <div class="mt-4">
+                <ul class="d-flex justify-content-evenly align-items-center container">
+                    <li class="d-flex flex-column justify-content-center align-items-center" data-aos="zoom-in-up">
+                        <h4><b class="number">21</b></h4>
+                        <p class="text-capitalize text-center">Years in business</p>
+                    </li>
+                    <li class="d-flex flex-column justify-content-center align-items-center" data-aos="zoom-in-up">
+                        <h4><b class="number">210</b></h4>
+                        <p class="text-capitalize text-center">Total Products</p>
+                    </li>
+                    <li class="d-flex flex-column justify-content-center align-items-center" data-aos="zoom-in-up">
+                        <h4><b class="number">18</b></h4>
+                        <p class="text-capitalize text-center">Total Products</p>
+                    </li>
+                </ul>
+            </div> 
+        </section>
+        <section id="productCategory" class="mt-5 pt-5">
+            <div class="container-fluid container-xl d-flex flex-column align-items-center align-items-md-start justify-content-start text-light">
+                <div class="d-flex justify-content-end align-items-start position-relative cards position-relative" data-aos="fade-right">
+                    <div class="info mt-1 mt-lg-4 me-3">
+                        <h5 class="text-decoration-underline fw-bolder fs-2 border-light">01.</h5>
+                        <div class="d-flex flex-column justify-content-start align-items-start mt-4" style="gap: 20px;">
+                            <h3><b class="text-uppercase fs-4 fw-bolder">Classic Desk Lamp</b></h3>
+                            <p>Classic Desk Lamp Enhance your workspace with this timeless desk lamp. Featuring a sleek metal base and an adjustable arm, it combines both form and function. Perfect for reading or focused tasks, its soft, warm glow adds elegance to any office or study.</p>
+                            <div class="d-flex justify-content-start align-items-center shop">
+                                <a>SHOPE NOW</a>
+                                <div class="arrow ms-3">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blockImg"><img src="images/Desk Lamp.png" alt="comp" class="shadow"/></div>
+                </div>
+                <div class="d-flex flex-row-reverse justify-content-start justify-content-md-start align-items-start cards position-relative" data-aos="fade-left">
+                    <div class="info mt-5 ms-3">
+                        <h5 class="text-decoration-underline fw-bolder fs-2 border-light">02.</h5>
+                        <div class="d-flex flex-column justify-content-start align-items-start mt-4" style="gap: 20px;">
+                            <h3><b class="text-uppercase fs-4 fw-bolder">Bamboo basket</b></h3>
+                            <p>Classic Desk Lamp Enhance your workspace with this timeless desk lamp. Featuring a sleek metal base and an adjustable arm, it combines both form and function. Perfect for reading or focused tasks, its soft, warm glow adds elegance to any office or study.</p>
+                            <div class="d-flex justify-content-start align-items-center shop">
+                                <a>SHOPE NOW</a>
+                                <div class="arrow ms-3">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blockImg"><img src="images/Bamboo basket.png" alt="comp"  class="category_img shadow"/></div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center w-100 mt-5 text-dark compBlock" style="gap:20px">
+                    <div class="comp shadow" style="background-image:url('images/Furnituew.webp');" data-aos="fade-up">
+                        <h5 class="text-decoration-underline fw-bolder fs-5 ">03.</h5>
+                        <div class="d-flex flex-column justify-content-between align-items-start">
+                            <h3><b class="text-uppercase fs-6 fw-bolder">Furniture</b></h3>
+                            <div class="d-flex justify-content-start align-items-end shop">
+                                <a href="" class="text-dark">SHOPE NOW</a>
+                                <div class="arrow ms-3">
+                                    <i class="fa-solid fa-arrow-right mt-1"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comp shadow" style="background-image:url('images/Kitchen\ &\ Bar.webp');" data-aos="fade-up">
+                        <h5 class="text-decoration-underline fw-bolder fs-5 ">04.</h5>
+                        <div class="d-flex flex-column justify-content-between align-items-start">
+                            <h3><b class="text-uppercase fs-6 fw-bolder">Kitchen & bar</b></h3>
+                            <div class="d-flex justify-content-start align-items-end shop">
+                                <a href="" class="text-dark">SHOPE NOW</a>
+                                <div class="arrow ms-3">
+                                    <i class="fa-solid fa-arrow-right mt-1"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comp shadow" style="background-image:url('images/Bathroom.webp');" data-aos="fade-up">
+                        <h5 class="text-decoration-underline fw-bolder fs-5 ">05.</h5>
+                        <div class="d-flex flex-column justify-content-between align-items-start">
+                            <h3><b class="text-uppercase fs-6 fw-bolder">bathroom</b></h3>
+                            <div class="d-flex justify-content-start align-items-end shop">
+                                <a href="" class="text-dark">SHOPE NOW</a>
+                                <div class="arrow ms-3">
+                                    <i class="fa-solid fa-arrow-right mt-1"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="viewBgWhenscroll mt-5">
+            <section class="d-flex justify-content-center align-items-center" id="saleAds">
+                <div class="container d-flex flex-column justify-content-center align-items-center text-light" style="gap:8px;" data-aos="flip-down">
+                    <img src="images/logoHotDeal.png" alt="HotDeal"/>
+                    <div class="d-flex flex-column justify-content-center align-items-center" style="gap: 20px;">
+                        <h2 class="text-uppercase">Hot Deals This Weak</h2>
+                        <p>Explore our Hot Deals This Week on stunning home designs! Transform your space with exclusive discounts on stylish furniture, elegant decor, and modern home accessories.</p>
+                        <div class="Timer d-flex justify-content-between align-items-center">
+                            <div class="d-flex flex-column justify-content-center align-items-center rounded-pill border">
+                                <h3 class="days">00</h3>
+                                <p class="m-0 p-0">Days</p>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center align-items-center rounded-pill border">
+                                <h3 class="hours">00</h3>
+                                <p class="m-0 p-0">Hours</p>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center align-items-center rounded-pill border">
+                                <h3 class="minutes">00</h3>
+                                <p class="m-0 p-0">Minutes</p>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center align-items-center rounded-pill border">
+                                <h3 class="seconds">00</h3>
+                                <p class="m-0 p-0">Seconds</p>
+                            </div>
+                        </div>
+                        <a class="button button-8">Shop Now</a>
+                    </div>
+                </div>
+            </section>
+            <section id="productList" class="w-100 mb-5">
+                <div class="d-flex justify-content-center align-items-center flex-column pt-5 pb-3">
+                    <ul class="filterList d-flex justify-content-between align-items-center container-fluid text-light mb-5 m-0 p-0">
+                        <li class="active" value="All" onclick="filterProuct(this)">All</li>
+                        <li value="New" onclick="filterProuct(this)">New Arrival</li>
+                        <li  value="Offers" onclick="filterProuct(this)">New Offers</li>
+                        <li  value="Popular" onclick="filterProuct(this)">Most Popular</li>
+                    </ul>
+                    <div class="d-flex swiper mySwiper w-100 h-100 container-fluid ps-2" style="gap:10px">
+                        <div class="productsBlock d-flex justify-content-start align-items-start swiper-wrapper"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section id="sendNewsletter" data-aos="zoom-out">
+            <div class="container d-flex flex-column align-items-start justify-content-center text-light h-100">
+                <h2 class="text-uppercase fw-bolder fs-sm-6">sign up for send newsletter</h2>
+                <p>Join our newsletter to receive the latest news, updates, and exclusive offers straight to your inbox. Sign up today and never miss out on what’s happening!</p>
+                <form class="d-flex justify-content-start align-items-center container" style="gap: 10px;">
+                    <input type="email" placeholder="Enter Your Email" class="border-light"/>
+                    <input type="submit" value="Send"/>
+                </form>
+            </div>
+        </section>
+        <section id="contact" class="container-fluid container-lg d-flex justify-content-between align-items-cenetr pt-5" style="gap:20px">
+            <div class="d-flex flex-column align-items-start text-light" style="gap:20px" data-aos="fade-left">
+                <h3 class="fs-1 fw-bolder" style="font-family: 'Monoton', sans-serif;">Get in Touch</h3>
+                <p class="w-75">We'd love to hear from you! Whether you're looking for design advice or just want to say hello</p>
+                <div class="detailsLocation">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot me-3"></i>
+                            <b>Address:</b> Jordan-Amman,7-Circle
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone me-3"></i>
+                            <b>Phone:</b> +962785541237
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope me-3"></i>
+                            <b>Email:</b> CozyNestDecore@gmail.com
+                        </li>
+                    </ul>
+                </div>
+                <form class="w-100 support h-100" id="supportTeam" method="get" action="">
+                    <div class="w-100 mb-2">
+                        <input type="text" placeholder="Your Name" class="w-100"  minlength="3" required/>
+                    </div>
+                    <div class="w-100 mb-2">
+                        <input type="email" name="email" placeholder="Your Email" class="w-100" required/>
+                    </div>
+                    <div class="w-100 mb-2">
+                        <textarea placeholder="Your Message" class="w-100" name="message" required style="height:200px;"></textarea>
+                    </div>
+                    <button class="button-arounder sendEmailButton" type="submit">Send Email</button>
+                </form>
+            </div>            
+            <div class="map shadow h-100">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384.372675107908!2d35.87243832537477!3d31.95583257831592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ca1d054c9b923%3A0x3ff3d7dbbda14a76!2s7th%20Circle!5e0!3m2!1sen!2sjo!4v1697081577826!5m2!1sen!2sjo"
+                    width="450"
+                    height="700"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+        <footer class="pt-2 pb-2">
+            <div class="ps-2 ps-xl-5 pe-2 pe-xl-5 d-flex flex-column justify-content-center align-items-center">
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo" />
+                </div>
+                <div class="d-flex justify-content-center w-100 container-fluid container-xl">
+                    <div class="col-md-4 d-flex flex-column justify-content-center justify-content-md-start" style="gap: 20px;">
+                        <div class="contactUs">
+                            <p class="fw-bolder">Contact Us</p>
+                            <ul class="p-0">
+                                <li class="d-flex align-items-center justify-content-start mb-3">
+                                    <i class="fa-solid fa-phone me-2"></i>
+                                    <p class="p-0 m-0">+962785541237</p>
+                                </li>
+                                <li class="d-flex align-items-center justify-content-start">
+                                    <i class="fa-solid fa-envelope me-2"></i>
+                                    <p class="p-0 m-0">CozyNestDecore@gmail.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="social">
+                            <p class="fw-bolder">Follow Us</p>
+                            <div class="d-flex justify-content-start align-items-center" style="gap: 30px;">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-square-twitter"></i>
+                                <i class="fa-brands fa-square-instagram"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 info">
+                        <p class="fw-bolder">Information</p>
+                        <ul class="p-0 d-flex flex-column align-items-start justify-content-start" style="gap:25px;">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Product</a></li>
+                            <li><a href="#about_us">About</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 account">
+                        <p class="fw-bolder">My Account</p>
+                        <ul class="p-0 account d-flex flex-column align-items-start justify-content-start" style="gap:25px;">
+                            <li>
+                                <i class="fa-solid fa-chevron-right"></i>
+                                <a href="">My Profile</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-chevron-right"></i>
+                                <a href="">My Orders</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-chevron-right"></i>
+                                <a href="">My Cart</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-chevron-right"></i>
+                                <a href="">My Favorite</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 location">
+                        <p>Shop Location</p>
+                        <p>Visit us at <a href="https://maps.app.goo.gl/DpWJt4n3h21JwDAXA" target="_blank" class="text-decoration-underline">Jordan-Amman,7-circle</a>! we're here to serve you with.</p>
+                    </div>
+                </div>
+                <div class="payment">
+                    <img src="images/payment_method.png" alt="payment" />
+                </div>
+            </div>
+        </footer>
+        <div class="controllOnPage d-flex flex-column align-items-end justify-content-end" style="gap: 20px;">
+            <div class="iconScrollTop"><i class="fa-solid fa-chevron-up"></i></div>
+            <a href="#contact" class="iconSupportTeam"><i class="fa-solid fa-headset"></i></a>
+        </div>
+
+        <div id="overlay"></div>
+        <div id="signin-popup" class="shadow">
+            <div class="container d-flex flex-column align-items-start justify-content-start">
+                <h2 class="text-uppercase fw-bolder fs-sm-6">sign up for send newsletter</h2>
+                <p>Join our newsletter to receive the latest news, updates, and exclusive offers straight to your inbox. Sign up today and never miss out on what’s happening!</p>
+                <form class="d-flex justify-content-start align-items-center container w-100" style="gap: 10px;">
+                    <input type="email" placeholder="Enter Your Email" class="border-dark w-100 p-2 rounded"/>
+                    <input type="submit" value="Send" class="p-2 bg-dark border-0 text-light"/>
+                </form>
+            </div>
+            <button id="close-popup" class="shadow">Close</button>
+        </div>
+        <div class="cart_Window flex-column align-items-between justify-content-between shadow">
+            <div class="top d-flex justify-content-between align-items-center border-bottom border-2 pb-3">
+                <h3 class="m-0 p-0"><i class="fa-solid fa-cart-shopping fs-5"></i> My Cart</h3>
+                <i class="fa-solid fa-circle-xmark fs-3 close_cart"></i>
+            </div>
+            <div id="cartProducts" class="d-flex flex-column align-items-start justify-content-start mt-3 w-100"></div>
+            <div class="d-flex justify-content-between align-items-center border-top border-2 pt-3">
+                <div>
+                    <p class="m-0 p-0 fw-bolder">Total:</p>
+                    <p class="m-0 p-0"><b id="totalPrice">0.0</b> JOD</p>
+                </div>
+                <button class="p-2 pt-1 pb-1">( <span id="checkoutNum">0</span> ) <span class="fw-bolder">CHECKOUT</span></button>
+            </div>
+        </div>
+        <div class="favorite_Window flex-column align-items-start justify-content-start shadow">
+            <div class="top d-flex justify-content-between align-items-center border-bottom border-2 pb-3 w-100">
+                <h3 class="m-0 p-0"><i class="fa-solid fa-heart fs-5"></i> My Favorite</h3>
+                <i class="fa-solid fa-circle-xmark fs-3 close_favorite"></i>
+            </div>
+            <div id='favoriteProducts' class="d-flex flex-column align-items-start justify-content-start mt-3 w-100"></div>
+        </div>
+
+        <p id="MessageAlert" class="p-3 w-100 position-fixed top-0 text-center fw-bolder bg-secondary hide"></p>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <!--Bootstrap cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--JQuery CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--Counter Up-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--Validation JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js" integrity="sha512-KFHXdr2oObHKI9w4Hv1XPKc898mE4kgYx58oqsc/JqqdLMDI4YjOLzom+EMlW8HFUd0QfjfAvxSL6sEq/a42fQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--bundle File-->
+    <script src="bundle.js"></script>
+    <!--Script File-->
+    <script src="script.js"></script>
+</body>
+</html>
