@@ -1,4 +1,5 @@
 🚀 Cozy Nest Design Home - E-Commerce Web Page
+
 This project is an interactive e-commerce web page built with Vanilla JavaScript and jQuery, designed to create a seamless shopping experience. It features a product gallery, cart management, favorites list, countdown timers, a popup for first-time visitors, and a fully responsive layout, making it accessible on all device sizes.
 
 ✨ Features:
@@ -12,6 +13,7 @@ Persistent Data – Shopping cart and favorite products are saved in localStorag
 Responsive Design – The layout adjusts seamlessly to different screen sizes, ensuring a smooth user experience across mobile, tablet, and desktop devices.
 Built with Vanilla JavaScript, this project provides an engaging and interactive shopping experience with smooth transitions, dynamic content updates, and mobile-friendly functionality.
 
-🔗 Live Demo
+🔗 Live Demo (https://nanmo57.github.io/Cozy-Nest-Design-Home/)
+
 📌 Contributions & suggestions are welcome!
 
